@@ -1,4 +1,8 @@
-body {margin:0;font-family:Arial}
+body {
+  margin:0;
+  font-family: Arial;
+  background-color: #1C1C1C;
+}
 
 .topnav {
   overflow: hidden;
@@ -16,7 +20,7 @@ body {margin:0;font-family:Arial}
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #cc0000;
   color: white;
 }
 
@@ -72,6 +76,28 @@ body {margin:0;font-family:Arial}
   display: block;
 }
 
+.sidebav {
+  width: 130px;
+  z-index: 1;
+  background: #333;
+  overflow-x: hidden;
+  padding: 8px 0;
+  float: none;
+  position: absolute;
+  left: 5.1%;
+  top: 14.8%;
+  transform: translate(-50%, -50%);
+}
+
+article.main {
+  padding-right: 180px;
+  padding-left: 180px;
+}
+
+p.mainArticle {
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -94,8 +120,14 @@ body {margin:0;font-family:Arial}
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
