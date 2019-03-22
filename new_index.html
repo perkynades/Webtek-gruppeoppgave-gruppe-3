@@ -3,39 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
     <title>E-sport news</title>
   </head>
 
   <body>
 
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-    <div class="sidebav">
-      <p class="mainArticle">Hello hello hello hello hello hello </p>
-    </div>
-
-    <article class="main">
-      <p class="mainArticle">Hello</p>
-    </article>
-
-    <script src="functions.js"></script>
+    <header>
+      <h1 class="logo">Logo</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">OSRS</a></li>
+          <li><a href="#">Apex</a></li>
+          <li><a href="#">RL</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
 
   </body>
 </html>
