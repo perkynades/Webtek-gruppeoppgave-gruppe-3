@@ -103,6 +103,13 @@ nav a {
   transition: opacity 100ms ease-in-out;
 }
 
+nav ul li ul li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  text-decoration: underline;
+}
+
 nav a:hover {
   color: #000;
 }
@@ -119,7 +126,7 @@ nav a:hover {
 /*Makes it so that the website changes to a
   pc friendly version when the screen width
   of a device is wider than 800px*/
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
@@ -148,6 +155,7 @@ nav a:hover {
   nav li {
     margin-left: 3em;
     margin-bottom: 0;
+    position: relative;
   }
 
   nav a {
@@ -171,4 +179,5 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
 }
