@@ -1,5 +1,5 @@
 :root {
-  --background: rgba(0, 214, 170, 0.85);
+  --background: rgba(0, 214, 170, 0.95);
 }
 
 *, *::before, *::after {
@@ -123,61 +123,33 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.grid-container {
+  display: none;
+}
+
 /*Makes it so that the website changes to a
   pc friendly version when the screen width
   of a device is wider than 800px*/
-/*@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
-
-  header {
+@media screen and (min-width: 800px) {
+  .grid-container {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    position: fixed;
+    top:80px;
+    width: 100%;
+    grid-template-columns: 200px auto 200px;
+    background-color: blue;
+    padding: 10px;
+    z-index: 900;
   }
 
-  .logo {
-    grid-column: 2 / 3;
+  .grid-item {
+    background-color: yellow;
+    text-align: center;
   }
 
-  nav {
-    all: unset;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  .grid-text {
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
   }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-    position: relative;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::before {
-    content: ' ';
-    display: block;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
-
 }
