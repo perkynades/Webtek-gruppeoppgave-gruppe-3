@@ -1,5 +1,5 @@
 :root {
-  --background: rgba(0, 214, 170, 0.95);
+  --background: rgba(179, 0, 0, 0.95);
 }
 
 *, *::before, *::after {
@@ -127,6 +127,16 @@ nav a:hover {
   display: none;
 }
 
+.main-article {
+  display: block;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
 /*Makes it so that the website changes to a
   pc friendly version when the screen width
   of a device is wider than 800px*/
@@ -134,22 +144,29 @@ nav a:hover {
   .grid-container {
     display: grid;
     position: fixed;
-    top:80px;
+    top: 80px;
     width: 100%;
     grid-template-columns: 200px auto 200px;
-    background-color: blue;
+    background-color: #222;
     padding: 10px;
     z-index: 900;
   }
 
   .grid-item {
-    background-color: yellow;
+    background-color: #424242;
     text-align: center;
+    color: white;
   }
 
   .grid-text {
     text-align: center;
-    padding-right: 5px;
-    padding-left: 5px;
+    color: white;
+    margin: 5px;
+    border-style: solid;
+    border-color: red;
+  }
+
+  .main-article {
+    display: none;
   }
 }
