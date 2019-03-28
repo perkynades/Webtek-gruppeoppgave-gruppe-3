@@ -1,17 +1,31 @@
-nav {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
+body{
+    margin: 0;
+    border: 0;
+    background-color: gray;
 }
 
-/* Links inside the navbar */
-nav a {
-    float: left;
-    font-size: 16px;
+h1{
+    margin-left: 0.4em;
+    font-size: 3em;
+}
+
+h1 a:link, h1 a:visited{
+    text-decoration: none;
+    color: rgba(255, 208, 0, 0.849);
+}
+
+h2{
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+}
+
+h3{
+    font-size: 0.8em;
+}
+
+.artikkelSection h3{
+    color: white;
+    font-size: 115%;
 }
 
 /* The dropdown container */
@@ -33,18 +47,8 @@ nav a {
 }
 
 /* Add a red background color to navbar links on hover */
-nav a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
-}
-
-nav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.dropdown a:active{
-    background-color: #4CAF50;
-    color: white;
 }
 
 /* Dropdown content (hidden by default) */
@@ -53,7 +57,7 @@ nav a.active {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -76,38 +80,7 @@ nav a.active {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-body {
-    margin: 0;
-    border: 0;
-    background-color: gray;
-}
-
-h1 {
-    margin-left: 0.4em;
-    font-size: 3em;
-}
-
-h1 a:link, h1 a:visited {
-    text-decoration: none;
-    color: rgba(255, 208, 0, 0.849);
-}
-
-h2 {
-    color: white;
-    text-align: center;
-}
-
-h3 {
-    font-size: 0.8em;
-}
-
-.artikkelSection h3 {
-    color: white;
-    font-size: 115%;
-}
-
-.pageList {
+.pageList{
     text-align: center;
     margin: auto;
     position: relative;
@@ -116,13 +89,13 @@ h3 {
     overflow: hidden;
 }
 
-.pageList li {
+.pageList li{
     display: inline-block;
     width: 10em;
 }
 
 
-.pageList li a:link, .pageList li a:visited {
+.pageList li a:link, .pageList li a:visited{
     display: block;
     color: white;
     text-decoration: none;
@@ -130,11 +103,11 @@ h3 {
     padding: 0.8em;
 }
 
-.pageList li a:hover, .pageList li a:active {
+.pageList li a:hover, .pageList li a:active{
     background-color: orange;
 }
 
-section {
+section{
     margin: auto;
     margin-top: 1em;
     width: 35.5em;
@@ -144,33 +117,33 @@ section {
     height: 43em;
 }
 
-section p {
+section p{
     color: white;
 }
 
-.firstArticle {
+.firstArticle{
     border-top: 2px solid rgba(255, 208, 0, 0.849);
 }
 
-.artikkelSection article {
+.artikkelSection article{
     margin: 0;
     background-color: rgba(80, 78, 78, 0.829);
     border-bottom: 0.3em solid rgba(255, 208, 0, 0.849);
 }
 
-section ul {
+section ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.artikkelListe li {
+.artikkelListe li{
     display: block;
     background-color: rgba(80, 78, 78, 0.829);
     border-bottom: 0.1em solid rgba(255, 208, 0, 0.849);
 }
 
-.artikkelListe li a:link, .artikkelListe li a:visited {
+.artikkelListe li a:link, .artikkelListe li a:visited{
     display: block;
     color: white;
     text-decoration: none;
@@ -179,15 +152,15 @@ section ul {
     font-size: 1.25em;
 }
 
-.artikkelListe li a:hover, .artikkelListe li a:active {
+.artikkelListe li a:hover, .artikkelListe li a:active{
     background-color: orange;
 }
 
-.toppLi {
+.toppLi{
     border-top: 0.1em solid rgba(255, 208, 0, 0.849);
 }
 
-.ranking {
+.ranking{
     position: absolute;
     top: 11.5em;
     left: 2em;
@@ -197,19 +170,19 @@ section ul {
     border: 0.2em solid rgba(255, 208, 0, 0.849);
 }
 
-.rankingListe {
+.rankingListe{
     margin: 0;
     padding: 0;
     height: 1.6em;
 }
 
-.rankingListe li {
+.rankingListe li{
     display: block;
     background-color: rgba(80, 78, 78, 0.829);
     border-bottom: 0.14em solid rgba(255, 208, 0, 0.849);
 }
 
-.rankingListe li a:link, .rankingListe li a:visited {
+.rankingListe li a:link, .rankingListe li a:visited{
     display: block;
     color: white;
     text-decoration: none;
@@ -217,11 +190,11 @@ section ul {
     padding: 0.27em;
 }
 
-.rankingListe li a:hover, .rankingListe li a:active {
+.rankingListe li a:hover, .rankingListe li a:active{
     background-color: orange;;
 }
 
-.kamper {
+.kamper{
     position: absolute;
     top: 11.5em;
     right: 2em;
@@ -231,19 +204,19 @@ section ul {
     border: 0.2em solid rgba(255, 208, 0, 0.849);
 }
 
-.kampListe {
+.kampListe{
     margin: 0;
     padding: 0;
     height: 2.5em;
 }
 
-.kampListe li {
+.kampListe li{
     display: block;
     background-color: rgba(80, 78, 78, 0.829);
     border-bottom: 0.2em solid rgba(255, 208, 0, 0.849);
 }
 
-.kampListe li a:link, .kampListe li a:visited {
+.kampListe li a:link, .kampListe li a:visited{
     display: block;
     color: white;
     text-decoration: none;
@@ -251,11 +224,11 @@ section ul {
     padding: 0.25em;
 }
 
-.kampListe li a:hover, .kampListe li a:active {
+.kampListe li a:hover, .kampListe li a:active{
     background-color: orange;;
 }
 
-.leftPic {
+.leftPic{
     position: absolute;
     left: 1em;
     top: 38em;
@@ -265,13 +238,13 @@ section ul {
     text-align: center;
 }
 
-.leftPic img {
+.leftPic img{
     display: block;
     width: 20em;
     border-top: 0.3em solid rgba(255, 208, 0, 0.849);
 }
 
-.rightPic {
+.rightPic{
     position: absolute;
     right: 4em;
     top: 35em;
@@ -281,14 +254,14 @@ section ul {
     text-align: center;
 }
 
-.rightPic img {
+.rightPic img{
     display: block;
     width: 13em;
     background-color: white;
     border-top: 0.3em solid rgba(255, 208, 0, 0.849);
 }
 
-.rankingSection {
+.rankingSection{
     margin: auto;
     margin-top: 5%;
     width: 50%;
@@ -298,7 +271,7 @@ section ul {
     height: 100%;
 }
 
-.rankingMainListe {
+.rankingMainListe{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -306,7 +279,7 @@ section ul {
     color: white;
 }
 
-.rankingMainListe li {
+.rankingMainListe li{
     display: block;
     width: 100%;
     height: 100%;
@@ -316,20 +289,20 @@ section ul {
     border-bottom: 2px solid rgba(255, 208, 0, 0.849);
 }
 
-.rankingMainListe p {
+.rankingMainListe p{
     margin: 0;
     float: right;
 }
 
-.up {
+.up{
     color: rgb(14, 236, 14);
 }
 
-.down {
+.down{
     color: red;
 }
 
-footer {
+footer{
     background-color: rgb(190, 187, 187);
     font-size: 0.8em;
     position: relative;
@@ -337,11 +310,11 @@ footer {
     bottom: 0;
 }
 
-footer p {
+footer p{
     margin: 0;
 }
 
-.rankingSection {
+.rankingSection{
     margin: auto;
     margin-top: 5%;
     width: 50%;
@@ -351,7 +324,7 @@ footer p {
     height: 100%;
 }
 
-.kamperMainListe {
+.kamperMainListe{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -359,7 +332,7 @@ footer p {
     color: white;
 }
 
-.kamperMainListe li {
+.kamperMainListe li{
     display: block;
     width: 100%;
     height: 100%;
@@ -370,7 +343,7 @@ footer p {
     border-bottom: 2px solid rgba(255, 208, 0, 0.849);
 }
 
-.turneringListe {
+.turneringListe{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -378,7 +351,7 @@ footer p {
     color: white;
 }
 
-.turneringListe li {
+.turneringListe li{
     display: block;
     width: 100%;
     height: 100%;
@@ -389,7 +362,7 @@ footer p {
     border-bottom: 2px solid rgba(255, 208, 0, 0.849);
 }
 
-.forumListe {
+.forumListe{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -397,7 +370,7 @@ footer p {
     color: white;
 }
 
-.forumListe li {
+.forumListe li{
     display: block;
     width: 100%;
     height: 100%;
@@ -407,7 +380,7 @@ footer p {
     border-bottom: 2px solid rgba(255, 208, 0, 0.849);
 }
 
-.forumListe li p {
+.forumListe li p{
     margin: 0;
     padding: 0;
     float: right;
