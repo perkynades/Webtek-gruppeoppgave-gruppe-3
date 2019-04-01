@@ -152,7 +152,7 @@ nav a:hover {
 @media screen and (min-width: 800px) {
   .grid-container {
     display: grid;
-    position: fixed;
+    position: absolute;
     top: 80px;
     width: 100%;
     grid-template-columns: 200px auto 200px;
@@ -162,7 +162,15 @@ nav a:hover {
   }
 
   .grid-item {
+    display: block;
     background-color: #424242;
+    text-align: center;
+    color: white;
+  }
+
+  .grid-item-transparent {
+    display: block;
+    background-color: #222;
     text-align: center;
     color: white;
   }
