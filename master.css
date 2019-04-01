@@ -137,6 +137,15 @@ nav a:hover {
   color: white;
 }
 
+.article {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
 /*Makes it so that the website changes to a
   pc friendly version when the screen width
   of a device is wider than 800px*/
@@ -168,5 +177,15 @@ nav a:hover {
 
   .main-article {
     display: none;
+  }
+
+  .article {
+    display: block;
+    position: fixed;
+    top: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    color: white;
   }
 }
