@@ -4,6 +4,8 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
 }
 
 body {
@@ -11,6 +13,12 @@ body {
   background: #222;
   font-family: 'work sans', sans-serif;
   font-weight: 400;
+  width: 100%;
+}
+
+img {
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
 .content {
@@ -30,10 +38,15 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  top: 0;
 }
 
 .nav-toggle {
   display: none;
+}
+
+.grid-container{
+  margin-top: 5rem;
 }
 
 .nav-toggle-label {
@@ -69,6 +82,14 @@ header {
 
 .nav-toggle-label span::after {
   top: 8px;
+}
+
+.grid-text {
+  text-align: center;
+  color: white;
+}
+.grid-item {
+  display: none;
 }
 
 nav {
@@ -123,20 +144,6 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.grid-container {
-  display: none;
-}
-
-.main-article {
-  display: block;
-  position: fixed;
-  top: 80px;
-  width: 100%;
-  text-align: center;
-  background-color: #222;
-  color: white;
-}
-
 /*Makes it so that the website changes to a
   pc friendly version when the screen width
   of a device is wider than 800px*/
@@ -144,16 +151,22 @@ nav a:hover {
   .grid-container {
     display: grid;
     position: relative;
-    top: 80px;
     width: 100%;
     grid-template-columns: 200px auto 200px;
     background-color: #222;
     padding: 10px;
-    z-index: 900;
   }
 
   .grid-item {
+    display: block;
     background-color: #424242;
+    text-align: center;
+    color: white;
+  }
+
+  .grid-item-transparent {
+    display: block;
+    background-color: #222;
     text-align: center;
     color: white;
   }
@@ -168,5 +181,24 @@ nav a:hover {
 
   .main-article {
     display: none;
+  }
+
+  .article {
+    display: block;
+    position: fixed;
+    top: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    color: white;
+  }
+
+  img {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  .ash-facts {
+    margin: 0;
   }
 }
