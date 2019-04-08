@@ -87,6 +87,9 @@ header {
 .grid-text {
   text-align: center;
   color: white;
+  margin: 5px;
+  border-style: solid;
+  border-color: red;
 }
 .grid-item {
   display: none;
