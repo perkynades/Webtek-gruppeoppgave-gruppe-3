@@ -1,0 +1,343 @@
+body{
+    margin: 0;
+    border: 0;
+    background-color: gray;
+}
+
+h1{
+    margin-left: 0.4em;
+    font-size: 3em;
+}
+
+h1 a:link, h1 a:visited{
+    text-decoration: none;
+    color: rgba(255, 208, 0, 0.849);
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 0.8em;
+}
+
+.artikkelSection h3{
+    color: white;
+    font-size: 115%;
+}
+
+
+nav{
+    margin: 0;
+    background-color: black;
+    position: relative;
+    border: 0.3em solid rgba(255, 208, 0, 0.849);
+}
+
+.pageList{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pageList li{
+    display: inline-block;
+    width: 10em;
+}
+
+
+.pageList li a:link, .pageList li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8em;
+}
+
+.pageList li a:hover, .pageList li a:active{
+    background-color: orange;
+}
+
+section{
+    margin: auto;
+    margin-top: 1em;
+    width: 35.5em;
+    background-color: black;
+    border: 0.3em solid rgba(255, 208, 0, 0.849);
+    position: relative;
+    height: 43em;
+}
+
+section p{
+    color: white;
+}
+
+.firstArticle{
+    border-top: 2px solid rgba(255, 208, 0, 0.849);
+}
+
+.artikkelSection article{
+    margin: 0;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 0.3em solid rgba(255, 208, 0, 0.849);
+}
+
+section ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.artikkelListe li{
+    display: block;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 0.1em solid rgba(255, 208, 0, 0.849);
+}
+
+.artikkelListe li a:link, .artikkelListe li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.95em;
+    font-size: 1.25em;
+}
+
+.artikkelListe li a:hover, .artikkelListe li a:active{
+    background-color: orange;
+}
+
+.toppLi{
+    border-top: 0.1em solid rgba(255, 208, 0, 0.849);
+}
+
+.ranking{
+    position: absolute;
+    top: 11.5em;
+    left: 2em;
+    width: 11em;
+    height: 23.8em;
+    background-color: black;
+    border: 0.2em solid rgba(255, 208, 0, 0.849);
+}
+
+.rankingListe{
+    margin: 0;
+    padding: 0;
+    height: 1.6em;
+}
+
+.rankingListe li{
+    display: block;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 0.14em solid rgba(255, 208, 0, 0.849);
+}
+
+.rankingListe li a:link, .rankingListe li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.27em;
+}
+
+.rankingListe li a:hover, .rankingListe li a:active{
+    background-color: orange;;
+}
+
+.kamper{
+    position: absolute;
+    top: 11.5em;
+    right: 2em;
+    width: 13em;
+    height: 16.9em;
+    background-color: black;
+    border: 0.2em solid rgba(255, 208, 0, 0.849);
+}
+
+.kampListe{
+    margin: 0;
+    padding: 0;
+    height: 2.5em;
+}
+
+.kampListe li{
+    display: block;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 0.2em solid rgba(255, 208, 0, 0.849);
+}
+
+.kampListe li a:link, .kampListe li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.25em;
+}
+
+.kampListe li a:hover, .kampListe li a:active{
+    background-color: orange;;
+}
+
+.leftPic{
+    position: absolute;
+    left: 1em;
+    top: 38em;
+    width: 20em;
+    border: 0.3em solid rgba(255, 208, 0, 0.849);
+    background-color: rgb(127, 127, 150);
+    text-align: center;
+}
+
+.leftPic img{
+    display: block;
+    width: 20em;
+    border-top: 0.3em solid rgba(255, 208, 0, 0.849);
+}
+
+.rightPic{
+    position: absolute;
+    right: 4em;
+    top: 35em;
+    width: 13em;
+    border: 0.3em solid rgba(255, 208, 0, 0.849);
+    background-color: rgb(127, 127, 150);
+    text-align: center;
+}
+
+.rightPic img{
+    display: block;
+    width: 13em;
+    background-color: white;
+    border-top: 0.3em solid rgba(255, 208, 0, 0.849);
+}
+
+.rankingSection{
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    background-color: black;
+    border: 5px solid rgba(255, 208, 0, 0.849);
+    position: relative;
+    height: 100%;
+}
+
+.rankingMainListe{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    color: white;
+}
+
+.rankingMainListe li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    padding: 3% 0;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 2px solid rgba(255, 208, 0, 0.849);
+}
+
+.rankingMainListe p{
+    margin: 0;
+    float: right;
+}
+
+.up{
+    color: rgb(14, 236, 14);
+}
+
+.down{
+    color: red;
+}
+
+footer{
+    background-color: rgb(190, 187, 187);
+    font-size: 0.8em;
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+}
+
+footer p{
+    margin: 0;
+}
+
+.rankingSection{
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    background-color: black;
+    border: 5px solid rgba(255, 208, 0, 0.849);
+    position: relative;
+    height: 100%;
+}
+
+.kamperMainListe{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    color: white;
+}
+
+.kamperMainListe li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    padding: 3% 0;
+    text-align: center;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 2px solid rgba(255, 208, 0, 0.849);
+}
+
+.turneringListe{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    color: white;
+}
+
+.turneringListe li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    padding: 3% 0;
+    text-align: center;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 2px solid rgba(255, 208, 0, 0.849);
+}
+
+.forumListe{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    color: white;
+}
+
+.forumListe li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    padding: 1% 0;
+    background-color: rgba(80, 78, 78, 0.829);
+    border-bottom: 2px solid rgba(255, 208, 0, 0.849);
+}
+
+.forumListe li p{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
